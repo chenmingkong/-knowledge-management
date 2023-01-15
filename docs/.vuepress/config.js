@@ -1,7 +1,8 @@
-// import {getAllFileNameArray} from "./config/sidebar/shared";
-
 module.exports = {
     title: '知识管理',
+    head: [
+        ['link', { rel: 'icon', href: '/cainiao404.png' }]
+    ],
     description: '我的日常记录',
     themeConfig: {
         logo: '/cainiao404.png',
@@ -28,7 +29,6 @@ module.exports = {
                     }
                 ]
             },
-            {text: 'github', link: 'https://github.com/chenmingkong/knowledge-management'},
         ],
         sidebar: {
             sidebarDepth: 0,
