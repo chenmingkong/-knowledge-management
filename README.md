@@ -8,3 +8,17 @@ vue-press具体参照https://vuepress.vuejs.org/zh/
 ## 博客展示
 
 https://chenmingkong.github.io/
+
+## 发布部署
+
+### linux
+
+```bash
+bash deploy.sh
+```
+
+### windows
+
+```bat
+deploy.bat
+```
