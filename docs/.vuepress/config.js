@@ -134,7 +134,13 @@ module.exports = {
         },
 
         lastUpdated: 'Last Updated', // string | boolean
-        editLinkText: '在 GitHub 上编辑此页',
+        repo: 'chenmingkong/knowledge-management',
+        repoLabel: '查看源码',
+        docsDir: 'docs',
+        docsBranch: 'master',
+        editLinks: true,
+        // 默认为 "Edit this page"
+        editLinkText: '在 GitHub 上编辑此页！'
 
     }
 }
