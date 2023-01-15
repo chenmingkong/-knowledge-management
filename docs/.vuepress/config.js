@@ -3,9 +3,8 @@
 module.exports = {
     title: '知识管理',
     description: '我的日常记录',
-    logo: '/cainiao404.png',
     themeConfig: {
-        displayAllHeaders: false,
+        logo: '/cainiao404.png',
         nav: [
             {text: 'Home', link: '/'},
             {text: '技术博客', link: '/blog/'},
@@ -29,7 +28,7 @@ module.exports = {
                     }
                 ]
             },
-            {text: 'github', link: 'https://github.com/chenmingkong/chenmingkong.github.io/tree/master'},
+            {text: 'github', link: 'https://github.com/chenmingkong/knowledge-management'},
         ],
         sidebar: {
             sidebarDepth: 0,
@@ -135,6 +134,7 @@ module.exports = {
         },
 
         lastUpdated: 'Last Updated', // string | boolean
+        editLinkText: '在 GitHub 上编辑此页',
 
     }
 }
