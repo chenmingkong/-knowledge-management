@@ -1,6 +1,6 @@
 # 读书清单
 
-![1674827192731](C:\Users\chenmingkong\AppData\Roaming\Typora\typora-user-images\1674827192731.png)
+![image](https://user-images.githubusercontent.com/35141929/215104850-e2416734-ad2d-415c-a402-e40af8541698.png)
 
 
 
