@@ -1,0 +1,12 @@
+name: knowlodge-deploy
+run-name: ${{ github.actor }} 🚀
+on: [push]
+jobs:
+  Deploy-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - run: bash deploy.sh
+      - run: echo "🍏 This job's status is ${{ job.status }}."
