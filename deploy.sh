@@ -7,6 +7,7 @@ set -e
 echo "======begin to build======="
 # npm run docs:build
 yarn docs:build
+yarn add -D vuepress
 
 # 进入生成的文件夹
 echo "======begin to push======="
