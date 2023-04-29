@@ -15,11 +15,6 @@ cd docs/.vuepress/dist
 
 # git变更及推送
 
-git init
-git add -A
-git commit -m 'deploy'
-git config http.sslVerify "false"
-
-git push -f https://github.com/chenmingkong/chenmingkong.github.io.git master
+ls -a
 
 cd -
