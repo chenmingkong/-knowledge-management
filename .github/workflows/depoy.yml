@@ -8,5 +8,7 @@ jobs:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - name: Check out repository code
         uses: actions/checkout@v3
+      - name: setup node
+        uses: actions/setup-node@v3
       - run: bash deploy.sh
       - run: echo "🍏 This job's status is ${{ job.status }}."
