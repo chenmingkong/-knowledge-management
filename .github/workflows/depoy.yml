@@ -13,4 +13,10 @@ jobs:
         with: 
           node-version: 16.x
       - run: bash deploy.sh
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: master
+          FOLDER: docs/.vuepress/dist
       - run: echo "🍏 This job's status is ${{ job.status }}."
