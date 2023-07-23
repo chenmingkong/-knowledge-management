@@ -1,6 +1,6 @@
 # 显示得workflow名称
 name: pages deploy
-on: 
+on:
   # 推送到master分支开始打包
   push:
     branches:
@@ -22,9 +22,9 @@ jobs:
     - name: Install dependencies
       run: yarn install
     - name: build
-      run: node -v && yarn run docs:build
+      run: yarn add -D vuepress && yarn docs:build
     - name: deploy
       uses: JamesIves/github-pages-deploy-action@v4.2.3
       with:
-        branch: gh-pages 
+        branch: gh-pages
         folder: docs/.vuepress/dist   # build后文件目录

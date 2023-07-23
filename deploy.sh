@@ -11,10 +11,4 @@ yarn docs:build
 
 # 进入生成的文件夹
 echo "======begin to push======="
-cd docs/.vuepress/dist
 
-# git变更及推送
-
-ls -a
-
-cd -

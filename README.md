@@ -7,7 +7,7 @@ vue-press具体参照https://vuepress.vuejs.org/zh/
 
 ## 博客展示
 
-https://chenmingkong.github.io/
+https://chenmingkong.github.io/knowledge-management
 
 ## 发布部署
 
