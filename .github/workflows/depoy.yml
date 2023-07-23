@@ -23,6 +23,8 @@ jobs:
       run: yarn install
     - name: build
       run: node -v && yarn run docs:build
+    - name: tree
+      run: tree
     - name: upload files 
       uses: actions/upload-artifact@v2
       with: 
@@ -33,6 +35,8 @@ jobs:
     needs: Build # 确保build 阶段完成
     runs-on: ubuntu-latest
     steps:
+      - name: checkout code
+        uses: actions/checkout@v2
       - name: tree
         run: tree
       - name: download build files
