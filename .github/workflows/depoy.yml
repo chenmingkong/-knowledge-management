@@ -8,7 +8,7 @@ on:
 
 jobs:
   # 开始打包
-  build:
+  Build:
     runs-on: ubuntu-latest
     steps:
     - name: checkout code
@@ -23,28 +23,8 @@ jobs:
       run: yarn install
     - name: build
       run: node -v && yarn run docs:build
-    - name: tree
-      run: tree
-    - name: Setup Pages
-      uses: actions/configure-pages@v3
-    - name: Build with Jekyll
-      uses: actions/jekyll-build-pages@v1
+    - name: deploy
+      uses: JamesIves/github-pages-deploy-action@v4.2.3
       with:
-        source: ./docs/.vuepress/dist
-        destination: ./_site
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v2
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+        branch: gh-pages 
+        folder: docs/.vuepress/dist   # build后文件目录
