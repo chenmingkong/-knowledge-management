@@ -20,4 +20,4 @@
        with:
          node: 16.9
      # 简写为
-     - run: yarn install && set NODE_OPTIONS=--openssl-legacy-provider && yarn docs:build
+     - run: node -v && npm install && npm -v && npm run docs:build
