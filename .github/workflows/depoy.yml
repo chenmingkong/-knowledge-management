@@ -15,9 +15,11 @@
        # 迁出触发的流程的版本 能让下面的工作流程访问
        uses: actions/checkout@v2
        # setup-node 可以提供node环境，指定node版本以及 npm /yarn缓存
-     - name: actions/setup-node@v2
-       uses: actions/setup-node@v2   
+     - name: Setup Node.js
+       uses: actions/setup-node@v2
        with:
-         node: 16.9
-     # 简写为
-     - run: node -v && npm install && npm -v && npm run docs:build
+         node-version: '16.x'
+     - name: Install dependencies
+       run: yarn install
+     - name: build
+       run: node -v && yarn run docs:build
