@@ -20,4 +20,4 @@
        with:
          node: 16.14
      # 简写为
-     - run: yarn install && yarn docs:build
+     - run: npm run docs:build
