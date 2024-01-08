@@ -19,3 +19,8 @@ jobs:
     steps:
       - run: echo "job4"
     needs: [job2, job3]
+  job5:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "job5"
+    needs: [job2, job4]
